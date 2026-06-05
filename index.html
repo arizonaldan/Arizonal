@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-container">
+            <ul class="nav-links left">
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+            <div class="log">
+                <h1>EVERLANE</h1>
+            </div>
+            <ul class="nav-links right">
+                <li><a href="#">Serach</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Cart (<span id="cart-count">0)</span></a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <p>The Spring Edit</p>
+                <h3>Classic Remarigined</h3>
+                <p>Styles Crafted To Redefine Luxury</p>
+                <div class="hero-btns">
+                    <a href="#" class="btn-primary">Shop New Arrival</a>
+                    <a href="#" class="btn-secondary">The Lookbook</a>
+                </div>
+            </div>
+        </section>
+        <section class="hero-container">
+            <div class="hero-image">
+                <div class="hero-text-overlay">
+                    <span class="eyebrow">New Arrival</span>
+                    <h2>The Line Edit</h2>
+                    <p>Breathable. Sustainabl. Essential</p>
+                    <div class="hero-btns">
+                        <a href="#" class="btn-white">SHOP Women</a>
+                        <a href="#" class="btn-white">SHOP Men</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="product-grid">
+            <div class="product-card" data-price="56">
+                <div class="image-palceholder"></div>
+                <img src="image/IMG_E2461.JPG" alt="">
+                <h3>The way-High Pant</h3>
+                <p>$56</p>
+                <button class="add-to-cart-btn">Add to cart</button>
+            </div>
+            <div class="product-card" data-price="45">
+                <div class="image-palceholder"></div>
+                <img src="image/IMG_E2461.JPG" alt="">
+                  <h3>The Premium Weight Tee</h3>
+                <p>$45</p>
+                <button class="add-to-cart-btn">Add to cart</button>
+            </div>
+            <div class="product-card" data-price="115">
+                <div class="image-palceholder"></div>
+                <img src="image/IMG_E2460.JPG" alt="">
+                  <h3>The Day Glove</h3>
+                <p>$115</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product-card" data-price="60">
+                <div class="image-palceholder"></div>
+                <img src="image/IMG_E2455.JPG" width="100" height="100">
+               <h3>The Curvy Jeans</h3>
+                <p>$60</p> 
+                <button class="add-to-cart-btn">Add to cart</button>  
+            </div>
+        </section>
+
+        <section>
+            <div id="cart-drawer" class ="cart-drawer">
+                <div class="drawer-header">
+                    <h3>Your Bag</h3>
+                    <button id="close-drawer">&times;</button>
+                </div>
+                <div id="cart-content">
+                    <p class="empty-msg">Your bag is empty</p>
+                </div>
+                <div class="drawer-footer">
+                    <p>Total:$<span id="total-price">0.00</span></p>
+                    <button id="btn-primary-drawer-btn">Check out</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

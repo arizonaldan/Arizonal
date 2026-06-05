@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background-color: white;
+    line-height: 1.5;
+}
+header{
+    height: 60px;
+    border-bottom: 1px solid rgb(247, 243, 243);
+    background-color: rgb(140, 90, 90);
+    position: sticky;
+    top: 0;
+}
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    height: 100%;
+    padding: 0 40px;
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.log{
+    text-align: center;
+    color: rgb(70, 40, 206);
+    font-weight: 300;
+}
+.nav-links a{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin: 0 12px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}    
+section.hero{
+    height: 90vh;
+    background-image: url(image/ugo.jpg);
+    display: flex;
+    background-position: center;
+    background-size: cover;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.hero-content h3{
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.hero-content p{
+    text-transform: uppercase;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    /*magin-left:150px;*/
+    align-items: center;
+}
+.hero-btns{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+.btn-primary,.btn-secondary{
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+.btn-primary{
+    background-color: black;
+    color: white;
+}
+.btn-secondary{
+    background-color: white;
+    color: black;
+}
+.hero-container{
+    margin-top: 20px;
+}
+.hero-image{
+    height: 90vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5)), url(image/tgr.jpg.JPG);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+.hero-text-overlay{
+    text-align: center;
+    max-width: 600px;
+}
+.eyebrow{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 10px;
+}
+.hero-text-overlay h2{
+    font-size: 64px;
+    font-weight: 400px;
+    margin: 50px;
+}
+.hero-text-overlay p{
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.btn-white{
+    color: black;
+    background-color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 400px;
+    border: none;
+    transition: 0.3s ease;
+}
+.btn-white:hover{
+    background-color: white;
+    transform: translateY(-2px);
+}
+.product-grid{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 60px 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.btn-white{
+    background-color: blue;
+}
+img{
+    height: 150px;
+}
+.cart-drawer{
+    position: fixed;
+    top: 0;
+    right: -420px;
+    height: 100px;
+    width: 400;
+    z-index: 1;
+    box-shadow: -10px 0px 30px rgb(0, 0, 0, 0.5);
+    transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45);
+    padding: 40px;
+    background-color: white;
+}
+.cart-drawer.open{
+    transform: translateX(-450px);
+}
+.drawer-header{
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgb(30, 23, 23);
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.close-drawer{
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+.drawer-footer{
+    width: 100%;
+}
+
+
+
+
+
